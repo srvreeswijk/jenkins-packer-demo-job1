@@ -1,15 +1,8 @@
-# van udemi course
+# Bouwt in jenkins een AMi and pushes it to aws. 
+The AMI contains:
+- centos 7 
+- docker
 
-in de udemi course zie section 7 Packer
 
-## prerequisites
-packer en terraform moeten geinstalleerd zijn. 
-```
-brew install packer
-brew install terraform
-```
-Mogelijk dat de base AMI id is gewijzigd bij AWS.  
-De huidige AMI id is voor eu-central-1
-
-## start
+## manual build 
 Start alles door het secript `build-and-launch.sh` te starten. 
