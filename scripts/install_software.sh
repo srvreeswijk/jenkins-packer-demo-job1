@@ -63,6 +63,10 @@ WantedBy=multi-user.target' > /etc/systemd/system/docker.demo.service
 systemctl enable docker.demo.service
 systemctl start docker.demo.service
 
+# for now disable the firewall, for real I should add the correct rules. 
+systemctl disable firewalld
+systemctl stop firewalld
+
 sleep 5
 echo 'check localhost:5000 to see if the app is running.....'
 curl localhost:5000
