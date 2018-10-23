@@ -1,5 +1,7 @@
 #!/bin/bash
 echo 'update system and install packages'
+yum clean all
+rm -rf /var/cache/yum/*
 yum -y update
 # install epel for nginx
 yum install -y epel-release

@@ -1,5 +1,5 @@
 resource "aws_instance" "example" {
-  ami           = "${var.AMI_ID}"
+  ami           = "${var.APP_INSTANCE_AMI}"
   instance_type = "t2.micro"
 
   # the VPC subnet
